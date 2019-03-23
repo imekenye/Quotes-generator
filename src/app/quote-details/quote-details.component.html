@@ -1,0 +1,25 @@
+<div class="quote-details">
+  <div class="top-area">
+    <div class="left-side">
+      <div class="publisher">{{ quote.publisher }}</div>
+      <div class="date">{{ quote.completeDate | dateCount }} hours ago</div>
+    </div>
+    <div class="delete-icon"><img src="../../assets/trash-alt-regular.svg" (click)='quoteDelete(true)'></div>
+  </div>
+  <div class="middle-area">
+    <p class="quote-text">"{{ quote.quote }}"</p>
+  </div>
+  <div class="bottom-area">
+    <div class="smiley-faces">
+      <div class="upvote">
+        <app-upvote (click)="upvoteClick()"></app-upvote>
+        &nbsp; {{numberOfUpvotes}}
+      </div>
+      <div class="downvote">
+        <app-downvote (click)="downvoteClick()"></app-downvote>
+        &nbsp; {{numberOfDownvotes}}
+      </div>
+    </div>
+    <div class="author">- {{ quote.author }}</div>
+  </div>
+</div>
