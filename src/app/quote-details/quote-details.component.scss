@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.quote-details {
+  height: 10rem;
+  width: 70%;
+  margin: 3.6rem 10rem;
+
+}
+
+.top-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.quote-text {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  color: #B1B8C9;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.publisher {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #4B85FF;
+
+}
+
+.date {
+  font-size: 1.6rem;
+  color: #F9C11A;
+}
+
+.delete-icon img {
+  color: #F9C11A;
+  height: 2rem;
+  filter: invert(47%) sepia(57%) saturate(5686%) hue-rotate(351deg) brightness(99%) contrast(97%);
+
+}
+
+.author {
+  color: #4B85FF;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.bottom-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+.smiley-faces {
+  font-size: 1.6rem;
+  display: flex;
+  width: 7.3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upvote,
+.downvote {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
