@@ -23,7 +23,6 @@ If you are using the SSH protocol, ensure your public key is in Bitbucket and lo
 
 3.  From a terminal window, change to the local directory where you want to clone your repository.
 
-or just use this link
 
 ## Development server
 
@@ -57,7 +56,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Live link
 
-Use this link to see the web-page
+Use this [link](http://ms-quotes.netlify.com) to see the web-page 
 
 
 ## Further help
