@@ -56,7 +56,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Live link
 
-Use this [link](http://ms-quotes.netlify.com) to see the web-page 
+Use this --> [LINK](http://ms-quotes.netlify.com) to see the web-page 
 
 
 ## Further help
