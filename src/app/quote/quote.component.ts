@@ -22,6 +22,20 @@ export class QuoteComponent implements OnInit {
       "Mary Kelly",
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       new Date(2019, 2, 19)
+    ),
+    new Quote(
+      2,
+      "Antony Smith",
+      "Martin luther",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      new Date(2019, 2, 19)
+    ),
+    new Quote(
+      2,
+      "Cecilia Rose",
+      "Martin luther",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      new Date(2019, 2, 19)
     )
   ];
   deleteQuote(isComplete, index) {
@@ -38,9 +52,8 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
-    this.quotes.push(quote)
-
-}
+    this.quotes.push(quote);
+  }
   constructor() {}
 
   ngOnInit() {}
