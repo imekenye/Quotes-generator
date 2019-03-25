@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { Quote } from "../quote";
 
 @Component({
@@ -7,7 +7,8 @@ import { Quote } from "../quote";
   styleUrls: ["./quote.component.scss"]
 })
 export class QuoteComponent implements OnInit {
-  @Input() quote: Quote;
+  public show: boolean = false;
+  public buttonName: any = "Show";
   quotes = [
     new Quote(
       1,
@@ -38,6 +39,13 @@ export class QuoteComponent implements OnInit {
       new Date(2019, 2, 19)
     )
   ];
+
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.unshift(quote);
+  }
+
   deleteQuote(isComplete, index) {
     if (isComplete) {
       let toDelete = confirm(
@@ -49,11 +57,6 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  addNewQuote(quote) {
-    let quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
-    this.quotes.push(quote);
-  }
   constructor() {}
 
   ngOnInit() {}

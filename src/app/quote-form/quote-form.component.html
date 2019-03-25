@@ -1,23 +1,23 @@
 <form class="form-group" (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
   <div class="textarea-heading">Create Quote</div>
-  <textarea class="inputfield" rows="20" cols="50" placeholder="Whats Your Favourite Quote?" id="description" [(ngModel)]="newQuote.quote"
-    name="quote" #quote="ngModel" required></textarea>
-  <div *ngIf="!quote.valid && quote.touched" class="alert">
+  <textarea class="inputfield" rows="20" cols="50" placeholder="Whats Your Favourite Quote?" id="description"
+    [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea>
+  <div *ngIf="!quote.dirty && quote.touched" class="alert">
     <p> Input is Required!</p>
   </div>
 
   <input class="inputfield" name="author" type="text" placeholder="Whose The Author?" id="author"
     [(ngModel)]="newQuote.author" #author="ngModel" required>
-  <div *ngIf="!author.valid && author.touched" class="alert">
+  <div *ngIf="!author.dirty && author.touched" class="alert">
     <p> Input is Required!</p>
   </div>
 
 
   <input class="inputfield" id="publisher" name="publisher" type="text" placeholder="Whats Your Name?"
     [(ngModel)]="newQuote.publisher" #publisher="ngModel" required>
-  <div *ngIf="!publisher.valid && publisher.touched" class="alert">
+  <div *ngIf="!publisher.dirty && publisher.touched" class="alert">
     <p> Input is Required!</p>
   </div>
 
-  <button type="Submit" class="btn-quote">Add Quote</button>
+  <button type="Submit" class="btn-quote">Post Quote</button>
 </form>
